@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SENAI - Serialização</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="icon" href="./img/logoS.png" type="image/icon type">
+</head>
+
+<body>
+    <section id="topo">
+
+        <body class="corpo">
+            <table border="0" align="center" width="80%">
+                <th colspan="1" class="td"></th>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+                <tr>
+                    <td><a href="index.html"><img src="./img/senai.png" height="53" align="left"></a></td>
+                </tr>
+            </table>
+            <br>
+    </section>
+
+    <br>
+    <table border="0" align="center" width="80%">
+        <th colspan="2" class="td"></th>
+        <tr>
+            <td height="10"></td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <section id="serializacao">
+        <div class="title1">
+            <p>O que é Serialização?</p>
+        </div>
+
+        <div class="corpo4">
+            <p>É um processo para converter uma estrutura de dados ou um objeto em um formato que possa ser armazenado
+                ou transferido.</p>
+            <p>O processo de serialização é independente da aplicação, um dado serializado em uma plataforma deve poder
+                ser deserializada por qualquer outra. Visando garantir a comunicação entre aplicações.</p>
+
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/serializacao1.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal21').style.display='block'">
+
+                    <div id="modal21" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/serializacao1.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <p><b>Mas porque precisamos disso?</b></p>
+            <p>Imagine que você tenha uma aplicação Java e queira transferir um objeto via rede, por exemplo fazendo um
+                post para uma aplicação em Noje.js. O problema está no fato de a rede, o socket ou qualquer outro pipe
+                de transporte que é não-tipado não sabe o que é um objeto Java, assim como uma aplicação em Node.js não
+                sabe, e assim não podendo envia-lo ou recebe-lo.</p>
+            <p>Imagine também querer armazenar uma estrutura da sua aplicação em um arquivo de texto ou no banco de
+                dados, você necessita serializar-lá para permitir que sejam compreendidas e armazenadas.</p>
+            <p>Assim, é necessário a serialização, para converter nosso objeto ou estrutura de dados em uma stream de
+                bytes que podem ser trafegado através da rede, pode ser entendido por qualquer aplicação ou armazenado
+                em um banco de dados.</p>
+    </section>
+    <br>
+
+    <footer>
+        <div class="divfooter">
+            <button class="btnft"><a href="#topo"><img src="./img/setas.png" width="25px"></a></button>
+        </div>
+        <hr>
+        <br>
+        Copyright 2023 © ... Giulia - Guilherme - Manuela - Pedro
+        <br>
+    </footer>
+</body>
+
+</html>

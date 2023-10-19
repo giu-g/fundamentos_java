@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SENAI - FPOO</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="icon" href="./img/logoS.png" type="image/icon type">
+</head>
+
+<body>
+
+    <section id="topo">
+
+        <body class="corpo">
+            <table border="0" align="center" width="80%">
+                <th colspan="2" class="td"></th>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+                <tr>
+                    <td><a href="index.html"><img src="./img/senai.png" height="53" align="left"></a></td>
+                    <td>
+                        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                            rel="stylesheet" />
+                        <input id="search" type="text" placeholder="&#xF002" style="font-family:Arial, FontAwesome" />
+                        </p> <button class="buttonSearch" onclick="SearchBar()">Search</button>
+                    </td>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <div class="btn-group">
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="objeto.html#objeto">Objetos</a></button>
+                    <div class="dropdown-content">
+                        <a href="objeto.html#instanciar">Instanciar um Objeto</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="classes.html#classe">Classes</a></button>
+                    <div class="dropdown-content">
+                        <a href="classes.html#classeinterna">Interna</a>
+                        <a href="classes.html#classeabstrata">Abstrata</a>
+                        <a href="classes.html#classeanonima">Anônima</a>
+                    </div>
+                </div>
+
+                <button type="button" class="button"><a href="atributos.html#atributo">Atributos</a></button>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="metodos.html#metodo">Métodos</a></button>
+                    <div class="dropdown-content">
+                        <a href="metodos.html#modificador">Modificadores de Acesso</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="pacotes.html#pacote">Pacotes</a></button>
+                    <div class="dropdown-content">
+                        <a href="pacotes.html#implementar">Implentar Classes em Pacotes</a>
+                    </div>
+                </div>
+
+                <button type="button" class="button"><a href="interface.html#interface">Interface</a></button>
+                <button type="button" class="button"><a href="enumeracao.html#enumeracao">Enumeração</a></button>
+                <button type="button" class="button"><a href="serializacao.html#serializacao">Serialização</a></button>
+                <button type="button" class="button"><a href="relacionamentos.html#relacionamento">Relacionamento de
+                        Objetos</a></button>
+
+            </div>
+    </section>
+
+    <br>
+    <table border="0" align="center" width="80%">
+        <th colspan="2" class="td"></th>
+        <tr>
+            <td height="10"></td>
+        </tr>
+    </table>
+    <br>
+
+    <hr>
+    <button type="button" class="button2"><a href="#definicaopoo">Definição de POO</a></button>
+
+    <div class="dropdown2">
+        <button class="dropbtn2"><a href="#pilares">Os 4 Pilares Da POO</a></button>
+        <div class="dropdown-content2">
+            <a href="#encapsulamento">Encapsulamento</a>
+            <a href="#heranca">Herança</a>
+            <a href="#polimorfismo">Polimorfismo</a>
+            <a href="#abstracao">Abstração</a>
+        </div>
+    </div>
+    <hr>
+
+    <section id="definicaopoo">
+        <div class="title1">
+            <p>Definição de POO</p>
+        </div>
+    </section>
+
+    <div class="corpo1">
+        <p>
+            Basicamente, o POO é a Programação Orientada a Objetos e consiste num paradigma de linguagem de
+            programação.
+        </p>
+        <p>
+            Assim como em outras áreas, existem diferentes caminhos para se chegar ao mesmo resultado, no universo
+            do desenvolvimento de softwares isso também acontece.
+        </p>
+        <p>
+            E um desses caminhos é o POO. A diferença, no entanto, é que o POO é o mais popular entre os developers.
+            Isso porque ele suporta várias linguagens e vai além do desenvolvimento, sendo o ponto de partida de
+            análises em geral.
+        </p>
+    </div>
+
+    <div class="box1">
+        <div class="title2">
+            Por que fala-se em orientação a objetos?
+        </div>
+        <div class="corpo2">
+            <p>O objeto é, na verdade, uma aglutinação de estados e comportamentos. Conceitualmente falando, um
+                objeto é um elemento que representa alguma entidade, quer seja abstrata quer seja concreta, da área
+                de interesse do problema que está sendo analisado.</p>
+            <p>Portanto, esse paradigma aproxima o mundo real do mundo virtual.</p>
+        </div>
+    </div>
+
+    <div class="box2">
+        <div class="title3">
+            Quais são as linguagens da Programação Orientada a Objetos?
+        </div>
+        <div class="corpo3">
+            <p>Como você viu até aqui, a POO é um paradigma de programação. Esse modelo, portanto, surgiu na década
+                de 70, e se tornou o mais popular entre as pessoas desenvolvedoras.</p>
+            <p>Nesse sentido, a POO suporta muitas linguagens de programação, entre elas:</p>
+            <p>C++ • <br> C# • <br> Java • <br> Object Pascal • <br> VB.NET • <br> Objective-C • <br> Python • <br>
+                Ruby • </p>
+            <p>Em suma, é raro encontrar uma linguagem de programação que não suporte POO.</p>
+        </div>
+    </div>
+
+    <br>
+    <div class="corpo1">
+        <p>As duas bases da POO são os conceitos de classe e objeto. Desses conceitos, derivam alguns outros
+            conceitos extremamente importantes ao paradigma, que não só o definem como são as soluções de alguns
+            problemas da programação estruturada. Os conceitos em questão são o encapsulamento, a herança, as
+            interfaces e o polimorfismo.</p>
+    </div>
+
+    <br>
+    <table border="0" align="center" width="80%">
+        <th colspan="2" class="td"></th>
+        <tr>
+            <td height="10"></td>
+        </tr>
+    </table>
+    <br>
+
+    <section id="pilares">
+        <div class="title1">
+            <p>Os Pilares da OO</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="encapsulamento">
+        <div class="subtitle1">
+            <p>Encapsulamento:</p>
+        </div>
+        <div class="corpo4">
+            <p>Usando a analogia do carro, sabemos que ele possui atributos e métodos, ou seja, características e
+                comportamentos. Os métodos do carro, como acelerar, podem usar atributos e outros métodos do carro
+                como
+                o tanque de gasolina e o mecanismo de injeção de combustível, respectivamente, uma vez que acelerar
+                gasta combustível.</p>
+
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/encapsulamento1.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal01').style.display='block'">
+
+                    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/encapsulamento1.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <p>No entanto, se alguns desses atributos ou métodos forem facilmente visíveis e modificáveis, como o
+                mecanismo de aceleração do carro, isso pode dar liberdade para que alterações sejam feitas,
+                resultando
+                em efeitos colaterais imprevisíveis. Nessa analogia, uma pessoa pode não estar satisfeita com a
+                aceleração do carro e modifica a forma como ela ocorre, criando efeitos colaterais que podem fazer o
+                carro nem andar, por exemplo.</p>
+            <p>Dizemos, nesse caso, que o método de aceleração do seu carro não é visível por fora do próprio carro.
+                Na
+                POO, um atributo ou método que não é visível de fora do próprio objeto é chamado de "privado" e
+                quando é
+                visível, é chamado de "público".</p>
+
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/encapsulamento2.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal02').style.display='block'">
+
+                    <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/encapsulamento2.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <p>Mas então, como sabemos como o nosso carro acelera? É simples: não sabemos. Nós só sabemos que para
+                acelerar, devemos pisar no acelerador e de resto o objeto sabe como executar essa ação sem expor
+                como o
+                faz. Dizemos que a aceleração do carro está encapsulada, pois sabemos o que ele vai fazer ao
+                executarmos
+                esse método, mas não sabemos como - e na verdade, não importa para o programa como o objeto o faz,
+                só
+                que ele o faça.</p>
+            <p>Esse encapsulamento de atributos e métodos impede o chamado vazamento de escopo, onde um atributo ou
+                método é visível por alguém que não deveria vê-lo, como outro objeto ou classe. Isso evita a
+                confusão do
+                uso de variáveis globais no programa, deixando mais fácil de identificar em qual estado cada
+                variável
+                vai estar a cada momento do programa, já que a restrição de acesso nos permite identificar quem
+                consegue
+                modificá-la.</p>
+        </div>
+
+        <br>
+        <div class="display1">
+            <div class="w3-container">
+                <img src="./img/encapsulamento3.png" style="width:10%;cursor:zoom-in"
+                    onclick="document.getElementById('modal26').style.display='block'">
+
+                <div id="modal26" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="./img/encapsulamento3.png" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="heranca">
+        <div class="subtitle1">
+            <p>Herança:</p>
+        </div>
+
+        <div class="corpo4">
+            <p>No nosso exemplo, você acabou de comprar um carro com os atributos que procurava. Apesar de ser
+                único,
+                existem carros com exatamente os mesmos atributos ou formas modificadas. Digamos que você tenha
+                comprado
+                o modelo Fit, da Honda. Esse modelo possui uma outra versão, chamada WR-V (ou "Honda Fit Cross
+                Style"),
+                que possui muitos dos atributos da versão clássica, mas com algumas diferenças bem grandes para
+                transitar em estradas de terra: o motor é híbrido (aceita álcool e gasolina), possui um sistema de
+                suspensão diferente, e vamos supor que além disso ele tenha um sistema de tração diferente (tração
+                nas
+                quatro rodas, por exemplo). Vemos então que não só alguns atributos como também alguns mecanismos
+                (ou
+                métodos, traduzindo para POO) mudam, mas essa versão "cross" ainda é do modelo Honda Fit, ou melhor,
+                é
+                um tipo do modelo.</p>
+
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/heranca1.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal03').style.display='block'">
+
+                    <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/heranca1.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <p>Quando dizemos que uma classe A é um tipo de classe B, dizemos que a classe A herda as
+                características da
+                classe B e que a classe B é mãe da classe A, estabelecendo então uma relação de herança entre elas.
+                No
+                caso do carro, dizemos então que um Honda Fit "Cross" é um tipo de Honda Fit, e o que muda são
+                alguns
+                atributos (paralama reforçado, altura da suspensão etc), e um dos métodos da classe (acelerar, pois
+                agora há tração nas quatro rodas), mas todo o resto permanece o mesmo, e o novo modelo recebe os
+                mesmos
+                atributos e métodos do modelo clássico.</p>
+        </div>
+        <br>
+        <div class="display1">
+            <div class="w3-container">
+                <img src="./img/heranca2.png" style="width:10%;cursor:zoom-in"
+                    onclick="document.getElementById('modal27').style.display='block'">
+
+                <div id="modal27" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="./img/heranca2.png" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="polimorfismo">
+        <div class="subtitle1">
+            <p>Polimorfismo:</p>
+        </div>
+
+        <div class="corpo4">
+            <p>Vamos dizer que um dos motivos de você ter comprado um carro foi a qualidade do sistema de som dele.
+                Mas,
+                no seu caso, digamos que a reprodução só pode ser feita via rádio ou bluetooth, enquanto que no seu
+                antigo carro, podia ser feita apenas via cartão SD e pendrive. Em ambos os carros está presente o
+                método
+                "tocar música" mas, como o sistema de som deles é diferente, a forma como o carro toca as músicas é
+                diferente. Dizemos que o método "tocar música" é uma forma de polimorfismo, pois dois objetos, de
+                duas
+                classes diferentes, têm um mesmo método que é implementado de formas diferentes, ou seja, um método
+                possui várias formas, várias implementações diferentes em classes diferentes, mas que possuem o
+                mesmo
+                efeito ("polimorfismo" vem do grego poli = muitas, morphos = forma).</p>
+
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/polimorfismo1.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal04').style.display='block'">
+
+                    <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/polimorfismo1.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <p>Repare que apesar de serem objetos diferentes, moto e carro possuem os mesmos métodos acelerar e
+                acenderFarol, que são chamados da mesma forma, apesar de serem implementados de maneira diferente.
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="abstracao">
+        <div class="subtitle1">
+            <p>Abstração:</p>
+        </div>
+
+        <div class="corpo4">
+            <p>A abstração consiste em um dos pontos mais importantes dentro de qualquer linguagem Orientada a
+                Objetos.
+                Como estamos lidando com uma representação de um objeto real (o que dá nome ao paradigma), temos que
+                imaginar o que esse objeto irá realizar dentro de nosso sistema. São três pontos que devem ser
+                levados
+                em consideração nessa abstração.</p>
+            <p>O primeiro ponto é darmos uma identidade ao objeto que iremos criar. Essa identidade deve ser única
+                dentro do sistema para que não haja conflito. Na maior parte das linguagens, há o conceito de
+                pacotes
+                (ou namespaces). Nessas linguagens, a identidade do objeto não pode ser repetida dentro do pacote, e
+                não
+                necessariamente no sistema inteiro.</p>
+            <p>A segunda parte diz respeito a características do objeto. Como sabemos, no mundo real qualquer objeto
+                possui elementos que o definem. Dentro da programação orientada a objetos, essas características são
+                nomeadas propriedades. Por exemplo, as propriedades de um objeto “Cachorro” poderiam ser “Tamanho”,
+                “Raça” e “Idade”.</p>
+            <p>Por fim, a terceira parte é definirmos as ações que o objeto irá executar. Essas ações, ou eventos,
+                são
+                chamados métodos. Esses métodos podem ser extremamente variáveis, desde “Acender()” em um objeto
+                lâmpada
+                até “Latir()” em um objeto cachorro.</p>
+
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/quatropilares.jpg" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal05').style.display='block'">
+
+                    <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/quatropilares.jpg" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <footer>
+        <div class="divfooter">
+            <button class="btnft"><a href="#topo"><img src="./img/setas.png" width="25px"></a></button>
+        </div>
+        <br>
+        <div class="divfooter">
+            <button class="btnft"><a href="fontes.html"><img src="./img/fontes.png" width="25px"></a></button>
+        </div>
+
+        <hr>
+        <br>
+        Copyright 2023 © ... Giulia - Guilherme - Manuela - Pedro
+        <br>
+    </footer>
+</body>
+
+</html>

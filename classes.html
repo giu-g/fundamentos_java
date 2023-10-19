@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SENAI - Classe</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="icon" href="./img/logoS.png" type="image/icon type">
+</head>
+
+<body>
+    <section id="topo">
+
+        <body class="corpo">
+            <table border="0" align="center" width="80%">
+                <th colspan="1" class="td"></th>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+                <tr>
+                    <td><a href="index.html"><img src="./img/senai.png" height="53" align="left"></a></td>
+                </tr>
+            </table>
+            <br>
+    </section>
+
+    <br>
+    <table border="0" align="center" width="80%">
+        <th colspan="2" class="td"></th>
+        <tr>
+            <td height="10"></td>
+        </tr>
+    </table>
+    <br>
+
+    <hr>
+    <button type="button" class="button2"><a href="#classe">O que é Classe?</a></button>
+    <button type="button" class="button2"><a href="#classeabstrata">O que são Classes Abstratas?</a></button>
+    <button type="button" class="button2"><a href="#classeinterna">O que são Classes Internas?</a></button>
+    <button type="button" class="button2"><a href="#classeanonima">O que são Classes Anônimas?</a></button>
+
+    <hr>
+
+    <section id="classe">
+        <div class="title1">
+            <p>O que é Classe?</p>
+        </div>
+
+        <div class="corpo4">
+            <p>Em programação e na orientação a objetos, uma classe é um Tipo abstrato de Dados (TAD); ou seja, uma
+                descrição que abstrai um conjunto de objetos com características similares (um projeto do objeto), é um
+                código da linguagem de programação orientada a objetos que define e implementa um novo tipo de objeto,
+                que terão características (atributos) que guardaram valores e, também funções específicas para manipular
+                estes.</p>
+            <p>Formalmente, é um conceito que encapsula abstrações de dados e procedimentos que descrevem o conteúdo e o
+                comportamento de entidades do mundo real, representadas por objetos.</p>
+            <p>De outra forma, uma classe pode ser definida como uma descrição das propriedades ou estados possíveis de
+                um conjunto de objetos, bem como os comportamentos ou ações aplicáveis a estes mesmos objetos.</p>
+            <p>A classe é um elemento primordial de um diagrama de classes; modelagem importante na programação
+                orientada a objetos.</p>
+            <p>No exemplo abaixo, implementado em Java, a classe Pessoa permite o acesso ao atributo nome somente
+                através dos métodos setNome e getNome.</p>
+
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/classe1.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal07').style.display='block'">
+
+                    <div id="modal07" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/classe1.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <hr>
+
+    <section id="classeabstrata">
+        <div class="subtitle1">
+            <p>O que são Classes Abstratas?</p>
+        </div>
+
+        <div class="corpo4">
+            <p>É um tipo de classe especial que não pode ser instanciada, apenas herdada. Sendo assim, uma classe
+                abstrata não pode ter um objeto criado a partir de sua instanciação. Essas classes são muito importantes
+                quando não queremos criar um objeto a partir de uma classe “geral”, apenas de suas “subclasses”.</p>
+            <p>Imagine que possuímos três classes (Conta, Conta Corrente e Conta Poupança), sendo a classe Conta uma
+                classe “geral” (comumente chamada de classe “pai”). Ao ir em um banco, nós não criamos uma nova Conta,
+                mas sim uma Conta Corrente ou uma Conta Poupança.</p>
+            <p>Sendo assim, não faz sentido que a classe Conta possa ser instanciada, já que é um erro na regra de
+                negócio caso isso ocorra. É aí que entra o termo “abstrato” desse tipo de classe, por não haver a
+                necessidade de criar objetos com base em uma classe “pai”, não há porquê ela permitir a instanciação de
+                novos objetos.</p>
+            <p>Agora, ao invés de criarmos um objeto do tipo Conta, só será permitido a criação de objetos do tipo Conta
+                Corrente ou Conta Poupança, o que faz mais sentido.</p>
+            <p>Por não permitir a instanciação de novos objetos com base em uma classe abstrata, este tipo de classe é
+                utilizada para implementar o conceito de Herança da OO. Ou seja, as classes abstratas irão armazenar
+                atributos e métodos comuns às classes que a irão herdar, permitindo um maior reaproveitamento de código.
+            </p>
+            <p>Além disso, as classes abstratas permitem que criemos métodos abstratos (mas nem todos). Basicamente, um
+                método abstrato é um método especial que não possui implementação, apenas assinatura (tipo de retorno,
+                nome e parâmetros), e obriga as classes que “herdarem” da classe abstrata à implementar estes métodos.
+            </p>
+
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/classeabstrata.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal08').style.display='block'">
+
+                    <div id="modal08" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/classeabstrata.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <hr>
+
+    <section id="classeinterna">
+        <div class="subtitle1">
+            <p>O que são Classes Internas?</p>
+        </div>
+
+        <div class="corpo4">
+            <p>Como o próprio nome diz, são classes que são definidas dentro de outra classe. Sendo que elas tem um
+                relacionamento especial com sua classe externa (classe onde ela está definida), em relação as outras
+                classes. Pelo fato de que elas podem acessar os membros privados da classe externa. É estranho, mais é
+                verdade. Por que na verdade o que acontece, implicitamente a classe interna tem uma instância da classe
+                externa.</p>
+
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/classeinterna.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal09').style.display='block'">
+
+                    <div id="modal09" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/classeinterna.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <hr>
+
+    <section id="classeanonima">
+        <div class="subtitle1">
+            <p>O que são Classes Anônimas?</p>
+        </div>
+
+        <div class="corpo4">
+            <p>Toda classe que não é declara explicitamente mas esta sendo chamada no código, representa o comportamento
+                de uma classe ou de uma interface.</p>
+
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/classeanonima.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal10').style.display='block'">
+
+                    <div id="modal10" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/classeanonima.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <p>Partindo do exemplo que não existe necessariamente uma classe para o método somar, mas , sem declaração
+                ela esta lá , ou seja classes anônimas são classes internas que funciona como uma subclasse do tipo do
+                objeto, não de onde esta sendo referenciado (no caso objeto do tipo somar).</p>
+        </div>
+    </section>
+
+    <br>
+
+    <footer>
+        <div class="divfooter">
+            <button class="btnft"><a href="#topo"><img src="./img/setas.png" width="25px"></a></button>
+        </div>
+        <hr>
+        <br>
+        Copyright 2023 © ... Giulia - Guilherme - Manuela - Pedro
+        <br>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SENAI - Interface</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="icon" href="./img/logoS.png" type="image/icon type">
+</head>
+
+<body>
+    <section id="topo">
+
+        <body class="corpo">
+            <table border="0" align="center" width="80%">
+                <th colspan="1" class="td"></th>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+                <tr>
+                    <td><a href="index.html"><img src="./img/senai.png" height="53" align="left"></a></td>
+                </tr>
+            </table>
+            <br>
+    </section>
+
+    <br>
+    <table border="0" align="center" width="80%">
+        <th colspan="2" class="td"></th>
+        <tr>
+            <td height="10"></td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <section id="interface">
+        <div class="title1">
+            <p>O que é Interface?</p>
+        </div>
+
+        <div class="corpo4">
+            <p>Muitos dos métodos dos carros são comuns em vários automóveis. Tanto um carro quanto uma motocicleta são
+                classes cujos objetos podem acelerar, parar, acender o farol etc, pois são coisas comuns a automóveis.
+                Podemos dizer, então, que ambas as classes "carro" e "motocicleta" são "automóveis".</p>
+            <p>Quando duas (ou mais) classes possuem comportamentos comuns que podem ser separados em uma outra classe,
+                dizemos que a "classe comum" é uma interface, que pode ser "herdada" pelas outras classes.</p>
+            <p>Note que colocamos a interface como "classe comum", que pode ser "herdada" (com aspas), porque uma
+                interface não é exatamente um classe, mas sim um conjunto de métodos que todas as classes que herdarem
+                dela devem possuir (implementar) - portanto, uma interface não é "herdada" por uma classe, mas sim
+                implementada.</p>
+            <p>No mundo do desenvolvimento de software, dizemos que uma interface é um "contrato": uma classe que
+                implementa uma interface deve fornecer uma implementação a todos os métodos que a interface define, e em
+                compensação, a classe implementadora pode dizer que ela é do tipo da interface.</p>
+            <p>No nosso exemplo, "carro" e "motocicleta" são classes que implementam os métodos da interface
+                "automóvel", logo podemos dizer que qualquer objeto dessas duas primeiras classes, como um Honda Fit ou
+                uma motocicleta da Yamaha, são automóveis.</p>
+            <p>Um pequeno detalhe: uma interface não pode ser herdada por uma classe, mas sim implementada. No entanto,
+                uma interface pode herdar de outra interface, criando uma hierarquia de interfaces.</p>
+            <p>Usando um exemplo completo com carros, dizemos que a classe "Honda Fit Cross" herda da classe "Honda
+                Fit", que por sua vez herda da classe "Carro". A classe "Carro" implementa a interface "Automóvel" que,
+                por sua vez, pode herdar (por exemplo) uma interface chamada "MeioDeTransporte", uma vez que tanto um
+                "automóvel" quanto uma "carroça" são meios de transporte, ainda que uma carroça não seja um automóvel.
+            </p>
+
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/interface1.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal19').style.display='block'">
+
+                    <div id="modal19" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/interface1.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+    </section>
+    <br>
+
+    <footer>
+        <div class="divfooter">
+            <button class="btnft"><a href="#topo"><img src="./img/setas.png" width="25px"></a></button>
+        </div>
+        <hr>
+        <br>
+        Copyright 2023 © ... Giulia - Guilherme - Manuela - Pedro
+        <br>
+    </footer>
+</body>
+
+</html>

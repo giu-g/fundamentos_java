@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SENAI - Método</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="icon" href="./img/logoS.png" type="image/icon type">
+</head>
+
+<body>
+    <section id="topo">
+
+        <body class="corpo">
+            <table border="0" align="center" width="80%">
+                <th colspan="1" class="td"></th>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+                <tr>
+                    <td><a href="index.html"><img src="./img/senai.png" height="53" align="left"></a></td>
+                </tr>
+            </table>
+            <br>
+    </section>
+
+    <br>
+    <table border="0" align="center" width="80%">
+        <th colspan="2" class="td"></th>
+        <tr>
+            <td height="10"></td>
+        </tr>
+    </table>
+    <br>
+
+    <hr>
+    <button type="button" class="button2"><a href="#metodo">O que é Método?</a></button>
+    <button type="button" class="button2"><a href="#modificador">O que são Modificadores de Acesso?</a></button>
+    <hr>
+
+    <section id="metodo">
+        <div class="title1">
+            <p>O que é Método?</p>
+        </div>
+
+        <div class="corpo4">
+            <p>Métodos são uma parte fundamental da programação orientada a objetos. É por meio deles que alteramos e
+                consultamos atributos dos nossos objetos. Sendo assim, é fundamental entender o conceito e claro, saber
+                como implementar métodos.</p>
+            <p>Métodos são o meio que utilizamos para ler, modificar e definir os atributos de um objeto. Estão sempre
+                associados a uma classe e, desta forma, podem ter seu escopo definido para poderem ser acessíveis a
+                diferentes níveis: podemos definir métodos que somente podem ser acessados internamente naquela classe,
+                métodos que não podem ser acessados diretamente e métodos que podem ser acessados de qualquer parte do
+                nosso projeto.</p>
+            <p>Utilizamos os métodos para fazer esses acessos aos objetos por questões de segurança e integridade do
+                objeto em si e da aplicação como um todo, temos que pensar que em uma aplicação completa, os dados dos
+                objetos são armazenados em um banco de dados, não é interessante (não é uma boa prática) a gente
+                permitir o acesso direto a essas informações, nem mesmo que seja apenas para consulta.</p>
+
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/metodo1.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal13').style.display='block'">
+
+                    <div id="modal13" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/metodo1.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <section id="modificador">
+        <div class="title1">
+            <p>O que são Modificadores de Acesso?</p>
+        </div>
+
+        <div class="corpo4">
+            <p>Modificadores de acesso são as palavras-chave usadas para especificar a acessibilidade da declaração de
+                um membro ou um tipo.</p>
+            <p>Lembrando que os modificadores de acesso são aplicáveis a atributos, classes, métodos, Structs,
+                interfaces e enumeradores. Temos cinco níveis de acessibilidade especificados aos modificadores de
+                acesso. Vejamos cada um, em uma situação hipotética, usando-os em classes:</p>
+            <p>• Public: Com este modificador, o acesso é livre em qualquer lugar do programa.</p>
+            <p>• Private: Com este modificador, o acesso é permitido somente dentro da classe onde ele foi declarado.
+                Por padrão, é a visibilidade definida para métodos e atributos em uma classe.</p>
+            <p>• Protected: Com este modificador, apenas a classe que contém o modificador e os tipos derivados dessa
+                classe tem o acesso.
+            </p>
+            <p>• Internal: Com este modificador, o acesso é limitado apenas ao assembly atual.</p>
+            <p>• Protected Internal: Com este modificador, o acesso é limitado ao assembly atual e aos tipos derivados
+                da classe que contém o modificador.</p>
+            <p>Por exemplo, na classe a seguir temos duas situações:</p>
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/metodo2.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal15').style.display='block'">
+
+                    <div id="modal15" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/metodo2.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p>Perceba que usamos o modificador private e o public, assim se instanciarmos a classe acima em outra parte
+                de nossa aplicação somente teremos acesso à propriedade Nome, já que a propriedade Idade é do tipo
+                private.</p>
+            <p>Obs: Quando o modificador é do tipo public, não é obrigatória a declaração dele na classe, como vemos
+                acima.</p>
+        </div>
+    </section>
+
+    <br>
+
+    <footer>
+        <div class="divfooter">
+            <button class="btnft"><a href="#topo"><img src="./img/setas.png" width="25px"></a></button>
+        </div>
+        <hr>
+        <br>
+        Copyright 2023 © ... Giulia - Guilherme - Manuela - Pedro
+        <br>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SENAI - Objeto</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="icon" href="./img/logoS.png" type="image/icon type">
+</head>
+
+<body>
+    <section id="topo">
+
+        <body class="corpo">
+            <table border="0" align="center" width="80%">
+                <th colspan="1" class="td"></th>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+                <tr>
+                    <td><a href="index.html"><img src="./img/senai.png" height="53" align="left"></a></td>
+                </tr>
+            </table>
+            <br>
+    </section>
+
+    <br>
+    <table border="0" align="center" width="80%">
+        <th colspan="2" class="td"></th>
+        <tr>
+            <td height="10"></td>
+        </tr>
+    </table>
+    <br>
+
+    <hr>
+    <button type="button" class="button2"><a href="#objeto">O que é Objeto?</a></button>
+    <button type="button" class="button2"><a href="#instanciar">O que é instanciar um objeto?</a></button>
+    <hr>
+
+    <section id="objeto">
+        <div class="title1">
+            <p>O que é Objeto?</p>
+        </div>
+
+        <div class="corpo4">
+            <p>Em POO, um "objeto" é uma instância de uma classe, que é uma estrutura que define um conjunto de
+                atributos (dados) e métodos (funções) que operam sobre esses atributos.</p>
+            <p>Os objetos são a unidade fundamental em POO e são usados para modelar entidades do mundo real de
+                forma mais abstrata e modular. Eles encapsulam dados e comportamento relacionado em uma única
+                unidade, tornando o código mais organizado e reutilizável.</p>
+            <p>Por exemplo, se você estivesse criando um programa para representar carros, poderia criar uma classe
+                "Carro" com atributos como modelo, cor e ano, e métodos para acelerar, frear, etc. Em seguida, você
+                poderia criar instâncias individuais desse objeto para representar carros específicos em seu
+                programa.</p>
+
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/objeto1.webp" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal06').style.display='block'">
+
+                    <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/objeto1.webp" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/objeto2.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal14').style.display='block'">
+
+                    <div id="modal14" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/objeto2.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <hr>
+
+    <section id="instanciar">
+        <div class="title1">
+            <p>O que é instanciar um objeto?</p>
+        </div>
+
+        <div class="corpo4">
+            <p>A instanciação é um processo por meio do qual se realiza a cópia de um objeto (classe) existente. Uma
+                classe, a qual tem a função de determinar um tipo de dado, deve ser instanciada para que possamos
+                utilizá-la. Sendo assim, devemos criar sua instância, a qual definimos como sendo um objeto referente ao
+                tipo de dado que foi definido pela classe.</p>
+            <p> Importante ressaltar que se apenas declararmos a classe desta forma: Pessoa objPessoa, não significa que
+                ela foi criada automaticamente. Assim, devemos usar o new nomeClasse(). Uma vez realizada a
+                instanciação, usamos o nomeObjetoCriado.membro para que possamos nos referenciar aos membros do objeto
+                criado (neste caso, às variáveis sexo, nome, idade).</p>
+            <p>Portanto, para poupar tempo e código declaramos e instanciamos a classe em uma única linha apenas desta
+                forma: Pessoa objPessoa = new Pessoa();.</p>
+
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/instanciar.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal07').style.display='block'">
+
+                    <div id="modal07" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/instanciar.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <br>
+
+    <footer>
+        <div class="divfooter">
+            <button class="btnft"><a href="#topo"><img src="./img/setas.png" width="25px"></a></button>
+        </div>
+        <hr>
+        <br>
+        Copyright 2023 © ... Giulia - Guilherme - Manuela - Pedro
+        <br>
+    </footer>
+</body>
+
+</html>

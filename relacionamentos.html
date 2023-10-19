@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SENAI - Relacionamento de Objetos</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="icon" href="./img/logoS.png" type="image/icon type">
+</head>
+
+<body>
+    <section id="topo">
+
+        <body class="corpo">
+            <table border="0" align="center" width="80%">
+                <th colspan="1" class="td"></th>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+                <tr>
+                    <td><a href="index.html"><img src="./img/senai.png" height="53" align="left"></a></td>
+                </tr>
+            </table>
+            <br>
+    </section>
+
+    <br>
+    <table border="0" align="center" width="80%">
+        <th colspan="2" class="td"></th>
+        <tr>
+            <td height="10"></td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <section id="relacionamento">
+        <div class="title1">
+            <p>O que é Relacionamento de Objetos?</p>
+        </div>
+
+        <div class="corpo4">
+            <p>Até o presente momento, lidamos com objetos, compostos por atributos, ou que se relacionam apenas com
+                outro objeto</p>
+            <p>Um sistema orientado a objetos é composto por dezenas de classes que se relacionam entre si para
+                solucionar o problema proposto</p>
+            <br>
+            <p>Suponha que temos uma classe <b>Livro</b> e uma classe <b>Biblioteca</b>: As classes Livro e Biblioteca
+                relacionam-se entre si. Uma biblioteca possui um acervo de livros. De outra forma, uma biblioteca é
+                composta por um conjunto de 0 (zero) ou mais livros.</p>
+            <br>
+            <p>Como demonstrar os relacionamentos no diagrama de classes?</p>
+            <p>Tipos de relacionamento:</p>
+            <p>• Associação</p>
+            <p>• Agregação</p>
+            <p>• Composição</p>
+            <p>• Herança</p>
+
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/relacionamento1.jpg" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal21').style.display='block'">
+
+                    <div id="modal21" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/relacionamento1.jpg" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <p><b>Associação:</b></p>
+            <p>A associação descreve um vínculo que ocorre entre classes , sendo que a mais comum é a associação
+                binária, mas é possível que uma classe esteja vinculada a si própria, e ai temos a associação unária;
+                outro cenário é onde temos uma associação que seja compartilhada por mais de uma classe, o que
+                conhecemos por associação ternária ou N-ária, sendo este tipo de associação a mais rara e também mais
+                complexa.</p>
+            <p>Falamos sobre associação entre dois objetos quando cada um deles pode usar o outro, mas também cada um
+                deles pode existir sem o outro. Não há dependência entre eles.</p>
+
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/relacionamento2.jpg" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal22').style.display='block'">
+
+                    <div id="modal22" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/relacionamento2.jpg" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <p><b>Agregação:</b></p>
+            <p>Esse relacionamento é um tipo especial de associação onde as informações de um objeto (chamado
+                objeto-todo) precisam ser complementados pelas informações contidas em um ou mais objetos de outra
+                classe (chamados objetos-parte); temos então o que conhecemos como todo/parte. A agregação um tipo
+                composição que representa um vínculo fraco entre duas classes.</p>
+            <p>O relacionamento de agregação ás vezes é referido como relacionamento "tem um" ou 'has a'.</p>
+            <p>Neste tipo de relacionamento, um objeto pode ser composto de um ou mais objetos na forma de suas
+                propriedades. Assim temos que :</p>
+            <p>- Todo Cliente tem um endereço para o qual o produto solicitado será enviado</p>
+            <p>- Cada Pedido tem um cliente, um endereço de envio e um produto representado como um PedidoItem</p>
+            <p>Podemos então concluir que nosso objeto da classe Pedido é composto pelos objetos Cliente, Endereco e
+                PedidoItem.</p>
+            <p>O objeto PedidoItem é ainda composto pelo objeto Produto e a classe Pedido compõe esses objetos com suas
+                propriedades.</p>
+            <p>Vejamos um exemplo de código que expressa isso:</p>
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/relacionamento3.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal23').style.display='block'">
+
+                    <div id="modal23" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/relacionamento3.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <p><b>Composição:</b></p>
+            <p>O relacionamento Composição, representa um vínculo forte entre duas classes , e , é também um
+                relacionamento caracterizado como parte/todo, mas, neste caso, o todo é responsável pelo ciclo de vida
+                da parte. Assim a existência do Objeto-Parte NÃO faz sentido se o Objeto-Todo não existir.</p>
+            <p>No nosso exemplo o objeto da classe Pedido é composto por um Cliente e um PedidoItem. Se rompermos o
+                relacionamento entre as classes Pedido e Cliente, a classe Cliente ainda vai poder existir, mas se a
+                relação entre a classe Pedido e a classe PedidoItem for quebrada, a classe PedidoItem não pode
+                existir.(um pedido é composto por um ou vários itens)</p>
+            <p>Suponha que a funcionalidade do nosso aplicativo mude no futuro e, em vez de aceitar pedidos de produtos,
+                agora oferece alguns outros serviços aos clientes existentes, digamos um serviço de mensagens.</p>
+            <p>Nesse cenário, a classe Pedido não servirá para nada. No entanto, a classe Cliente que já foi composta
+                pela classe Pedido ainda pode existir sem ela, já a classe PedidoItem não pode.</p>
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/relacionamento4.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal24').style.display='block'">
+
+                    <div id="modal24" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/relacionamento4.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <p><b>Herança:</b></p>
+            <p>A herança às vezes é referida como um relacionamento "é um" ou 'is a'. Neste tipo de relacionamento, uma
+                classe herda os membros de outra classe. A classe herdada é conhecida como a classe base, enquanto a
+                classe herdada é conhecida como a classe derivada. Como a classe derivada tem os membros da classe base,
+                pode-se dizer que a classe derivada é um sub-tipo da classe base. A classe derivada pode ou não ter
+                membros diferentes dos herdados.</p>
+            <p>Suponha que nosso aplicativo esteja funcionando bem no mercado. Ao ver isso, o proprietário do produto
+                agora quer adicionar um novo recurso no aplicativo que monitoraria o tipo de produtos com alta demanda.
+            </p>
+            <p>A partir do novo requisito, é bastante claro que teremos de criar sub-tipos de nossa classe de produtos.
+                Esses sub-tipos representarão as categorias de produtos especializados no mundo real, conforme mostrado
+                na imagem abaixo.</p>
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/relacionamento5.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal25').style.display='block'">
+
+                    <div id="modal25" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/relacionamento5.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>As classes AlbumMusica e Livro, possuem algumas propriedades próprias; mas como herdam da classe Produto,
+                elas também herdam suas propriedades.</p>
+            <p>Então, pode-se dizer que o AlbumMusica é um tipo de produto e, da mesma forma o Livro é um tipo de
+                produto.</p>
+            <p>Dessa forma a herança pode ser usada para reutilizar e estender código.</p>
+    </section>
+    <br>
+
+    <footer>
+        <div class="divfooter">
+            <button class="btnft"><a href="#topo"><img src="./img/setas.png" width="25px"></a></button>
+        </div>
+        <hr>
+        <br>
+        Copyright 2023 © ... Giulia - Guilherme - Manuela - Pedro
+        <br>
+    </footer>
+</body>
+
+</html>

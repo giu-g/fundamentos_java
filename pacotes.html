@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SENAI - Pacote</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="icon" href="./img/logoS.png" type="image/icon type">
+</head>
+
+<body>
+    <section id="topo">
+
+        <body class="corpo">
+            <table border="0" align="center" width="80%">
+                <th colspan="1" class="td"></th>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+                <tr>
+                    <td><a href="index.html"><img src="./img/senai.png" height="53" align="left"></a></td>
+                </tr>
+            </table>
+            <br>
+    </section>
+
+    <br>
+    <table border="0" align="center" width="80%">
+        <th colspan="2" class="td"></th>
+        <tr>
+            <td height="10"></td>
+        </tr>
+    </table>
+    <br>
+
+    <hr>
+    <button type="button" class="button2"><a href="#pacote">O que é Pacote?</a></button>
+    <button type="button" class="button2"><a href="#implementar">Como Implementar Classes em Pacotes?</a></button>
+    <hr>
+
+    <section id="pacote">
+        <div class="title1">
+            <p>O que é Pacote?</p>
+        </div>
+
+        <div class="corpo4">
+            <p>Quando desenvolvemos um sistema OO, definimos um conjunto de classes. Para organizar essas classes surge
+                o conceito de pacote.</p>
+            <p>Pacote é um envoltório de classes, ou seja, guarda classes e outros pacotes logicamente semelhantes ao
+                pacote que os contém. </p>
+            <p>Podemos visualizar os pacotes como diretórios ou pastas, nosquais podemos guardar arquivos (classes) e
+                outros diretórios (pacotes) que tenham conteúdo relacionado com o pacote que os contém.</p>
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/pacote1.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal16').style.display='block'">
+
+                    <div id="modal16" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/pacote1.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <section id="implementar">
+        <div class="title1">
+            <p>Como Implementar Classes em Pacotes?</p>
+        </div>
+
+        <div class="corpo4">
+            <p>Para indicar que uma classe Java pertence a um determinado pacote, a primeira linha de código deve ser a
+                declaração de pacote implementada através da diretiva package, seguida do nome do pacote, obedecendo a
+                seguinte sintaxe:</p>
+            <p><b>package</b> nomedopacote;</p>
+            <p>Essencialmente, uma classe denominada MinhaClasse que pertence a um pacote nomedopacote tem um “nome
+                completo” que é nomedopacote.MinhaClasse. Assim, se outra aplicação tiver uma classe de mesmo nome, não
+                haverá conflitos, pois classes em pacotes diferentes têm nomes completos distintos.</p>
+
+            <br>
+            <div class="display1">
+                <div class="w3-container">
+                    <img src="./img/pacote2.png" style="width:10%;cursor:zoom-in"
+                        onclick="document.getElementById('modal17').style.display='block'">
+
+                    <div id="modal17" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img src="./img/pacote2.png" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="title1">
+                <p>Como Implementar Classes em Pacotes No <b>Java</b>?</p>
+            </div>
+
+            <div class="corpo4">
+                <p>1) Com o cursor em cima do pacote, clique com o botão direito do mouse.</p>
+                <p>2) Selecione a opção "<b>New</b>".</p>
+                <p>3) Clique em "<b>Class</b>".</p>
+                <p>4) Configure sua classe.</p>
+
+                <br>
+                <div class="display1">
+                    <div class="w3-container">
+                        <img src="./img/pacote3.png" style="width:10%;cursor:zoom-in"
+                            onclick="document.getElementById('modal18').style.display='block'">
+
+                        <div id="modal18" class="w3-modal" onclick="this.style.display='none'">
+                            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                            <div class="w3-modal-content w3-animate-zoom">
+                                <img src="./img/pacote3.png" style="width:100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <br>
+
+    <footer>
+        <div class="divfooter">
+            <button class="btnft"><a href="#topo"><img src="./img/setas.png" width="25px"></a></button>
+        </div>
+        <hr>
+        <br>
+        Copyright 2023 © ... Giulia - Guilherme - Manuela - Pedro
+        <br>
+    </footer>
+</body>
+
+</html>
